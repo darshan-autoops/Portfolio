@@ -112,7 +112,7 @@
   .window {
     width: auto;
     height: auto;
-    max-width: 100%;
+    max-width: auto;
     max-height: 100%;
   }
 }
