@@ -12,7 +12,6 @@ body {
 #terminal {  
   width: 40vw;  
   height: 65vh;  
-  margin-left: 15vh;
   box-shadow: 2px 4px 10px rgba(0,0,0,0.5);
 } 
 #terminal__bar {  
@@ -62,13 +61,15 @@ body {
   font-size: 14px;  
   line-height: 15px;
 } 
-#terminal__body {    
+#terminal__body {  
+    align-items: center;  
   background: rgba(56, 4, 40, 0.9);
   font-size: 13px;
   color: #dddddd;  
   font-family: 'Ubuntu Mono';  
   height: calc(100% - 30px);  
   padding-top: 2px;  
+  padding-right: 100px;
   margin-top: -1px;
 } 
 #terminal__prompt {  
@@ -79,13 +80,9 @@ body {
 }
 .terminal__prompt--message {
     color: #dddddd;
-    white-space: nowrap;
-    font-family: 'Ubuntu Mono';
 }
 .terminal__prompt--message1{
   color: #dddddd;
-    white-space: nowrap;
-    font-family: 'Ubuntu Mono';
 }
 #terminal__prompt--location { 
   color: #4878c0;
@@ -189,10 +186,11 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .window {
-    width: auto;
+  #terminal {
+    width: 70%;
     height: auto;
-    max-width: 100%;
-    max-height: 100%;
+    max-height: 90%;
+    margin-left: 4vh;;
+    margin-right: auto;
   }
 }
